@@ -42,13 +42,10 @@ header a:hover{
     color: #fff;
 }
 
-
 #band{
-    padding: 20px;
-    width: 100%;
-    max-width: 800px;
-    margin: 30px auto;
-} 
+    margin: 50px auto;
+}
+
 .heading{
     font-weight: normal;
     text-align: center;
@@ -85,8 +82,8 @@ header a:hover{
 }
 
 #tour{
-    background-color: rgb(15, 15, 15);
-    padding: 30px;
+    background-color: rgb(0, 0, 0);
+    padding: 60px;
 }
 
 #tour .heading{
@@ -109,7 +106,7 @@ header a:hover{
 }
 
 .month{
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgb(194, 192, 192);
     padding: 10px 16px;
     color: #888888;
     display: flex;
@@ -138,13 +135,37 @@ header a:hover{
 
 .card__list{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .card{
     background-color: #fff;
-    padding
+    width: 32%;
 }
 
-.place{
-    
+.card__content{
+    padding: 16px;
+}
+
+.card p{
+    margin-bottom: 14px;
+}
+
+p.place{
+    font-weight: bold;
+}
+
+p.date{
+    color: #777;
+    font-size: 14px;
+}
+
+.btn {
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
 }
