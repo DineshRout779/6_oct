@@ -11,21 +11,19 @@
 
 <body>
     <header>
-        <a href="#">HOME</a>
-        <a href="#">BRAND</a>
+        <a href="index.html">HOME</a>
+        <a href="#band">BAND</a>
         <a href="#">TOUR</a>
         <a href="#">CONTACT</a>
         <a href="#">MORE</a>
         <a href="#" class="search"><i class="fa fa-search" aria-hidden="true"></i></a>
     </header>
     <div class="hero">
-        <img src="ny.jpg" alt="" name="image">
-        <img src="la.jpg" alt="" name="image">
-        <img src="chicago.jpg" alt="" name="image">
+        <img src="" name="image">
     </div>
     <div id="band">
-        <h1>THE BAND</h1>
-        <p class="slogan">We Love Music</p>
+        <h1 class="heading">THE BAND</h1>
+        <p class="slogan">We love music</p>
         <p>We have created a fictional website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
             ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
@@ -55,6 +53,82 @@
             </div>
         </div>
     </div>
+    <div id="tour">
+        <h1 class="heading">TOUR DATES</h1>
+        <p class="slogan">Remeber to book your tickets</p>
+        <div class="container">
+            <div class="month__list">
+                <div class="month">
+                    October <span class="avail">Sold out</span>
+                </div>
+                <div class="month">
+                    November <span class="avail">Sold out</span>
+                </div>
+                <div class="month">
+                    December <span class="avail yes">Available</span> <span class="no">50</span>
+                </div>
+            </div>
+            <div class="card__list">
+                <div class="card">
+                    <div class="card__img">
+                        <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="">
+                    </div>
+                    <div class="card__content">
+                        <p class="place">New York</p>
+                        <p class="date">Fri 27 October 2021</p>
+                        <p>
+                            Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                        </p>
+                        <button class="btn">Buy Tickets</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__img">
+                        <img src="https://www.w3schools.com/w3images/paris.jpg" alt="">
+                    </div>
+                    <div class="card__content">
+                        <p class="place">New York</p>
+                        <p class="date">Fri 27 October 2021</p>
+                        <p>
+                            Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                        </p>
+                        <button class="btn">Buy Tickets</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__content">
+                        <p class="place">New York</p>
+                        <p class="date">Fri 27 October 2021</p>
+                        <p>
+                            Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                        </p>
+                        <button class="btn">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let i = 0;
+        var images = ['img1.jpg', 'img2.jpg', 'img3.jpg'];
+        let time = 3000;
+
+        function nextImg() {
+            document.image.src = images[i];
+
+            if (i == images.length - 1) {
+                i = 0;
+            }
+            else {
+                i++;
+            }
+
+            setTimeout("nextImg()", time);
+
+        }
+
+        window.onload = nextImg();
+    </script>
 </body>
 
 </html>
