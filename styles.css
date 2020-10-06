@@ -169,3 +169,64 @@ p.date{
     font-size: 16px;
     cursor: pointer;
 }
+
+.contact{
+    margin: 85px auto;
+}
+
+.contact__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    padding:12px  10px;
+    font-size: 14px;
+    width: 100%;
+    margin: 5px 0;
+    border: 1px solid rgb(165, 164, 164);
+}
+
+.bg-two{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bg-two input+input{
+    margin-left: 10px;
+}
+
+form .btn{
+    margin-left: auto;
+    margin-top: 5px;
+}
+
+.contact__details{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.contact__details__item{
+    margin: 5px 0;
+}
+
+.contact__details__item i{
+    margin-right: 20px;
+}
+
+.contact__details__item:hover{
+    color: gray;
+}
