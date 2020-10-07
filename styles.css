@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: Verdana;
 }
 
 a{
@@ -11,6 +11,10 @@ a{
 
 img{
     width: 100%;
+}
+
+p{
+    line-height: 22px;
 }
 
 header{
@@ -30,7 +34,7 @@ header a{
 }
 
 header a:hover{
-    background-color: #c4c0c0;
+    background-color: #e0e0e0;
     color: #000;
 }
 
@@ -43,6 +47,32 @@ header a:hover{
     color: #fff;
 }
 
+.dropdown{
+    position: relative;
+}
+
+ul{
+    list-style-type: none;
+    position: absolute;
+    top: 48px;left: 0;
+    width: 150px;
+    display: none;
+}
+
+li{
+    background-color: #ffffff;
+    padding: 10px 14px;
+    font-size: 14px;
+}
+
+li:hover{
+    background-color: #e0e0e0;
+}
+
+.dropdown:hover ul{
+    display: block;
+}
+
 #band{
     margin: 50px auto;
 }
@@ -51,6 +81,7 @@ header a:hover{
     font-weight: normal;
     text-align: center;
     margin-top: 20px;
+    letter-spacing: 3px;
 }
 
 .slogan{
@@ -230,4 +261,29 @@ form .btn{
 
 .contact__details__item:hover{
     color: gray;
+}
+
+footer{
+    margin: 60px auto;
+    padding: 50px;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.icons i{
+    margin: 0 5px;
+    font-size: 24px;
+    color: gray;
+    padding: 5px;
+    transition: color 0.3s ease-in;
+    cursor: pointer;
+}
+
+.icons i:hover{
+    color: rgb(51, 49, 49);
 }
