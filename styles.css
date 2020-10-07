@@ -20,10 +20,16 @@ p{
 header{
     background-color: #000;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     position: sticky;
     top: 0;left: 0;right: 0;
+}
+
+.ham-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header a{
@@ -45,6 +51,10 @@ header a:hover{
 .search:hover{
     background-color: rgb(206, 33, 33);
     color: #fff;
+}
+
+.menu{
+    display: none;
 }
 
 .dropdown{
@@ -75,6 +85,7 @@ li:hover{
 
 #band{
     margin: 50px auto;
+    
 }
 
 .heading{
@@ -99,7 +110,7 @@ li:hover{
 }
 
 .member__item{
-    padding: 30px 50px;
+    padding: 30px;
 }
 
 .member__item .name{
@@ -115,7 +126,8 @@ li:hover{
 
 #tour{
     background-color: rgb(0, 0, 0);
-    padding: 60px;
+    padding: 50px 0;
+    
 }
 
 #tour .heading{
@@ -127,6 +139,7 @@ li:hover{
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .month__list{
@@ -286,4 +299,64 @@ footer{
 
 .icons i:hover{
     color: rgb(51, 49, 49);
+}
+
+@media (max-width : 630px){
+    .dropdown i{
+        display: none;
+    }
+    .ham-menu{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+        margin-right: 12px;
+    }
+    .bar{
+        width: 30px;
+        margin: 3px auto;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 3px;
+    }
+    #band{
+        margin: 25px auto;
+    }
+    .member{
+        flex-direction: column;
+    }
+    .card__list{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .contact{
+        margin: 0;
+    }
+    .contact__box{
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        align-items: stretch;
+    }
+    .bg-two{
+        flex-direction: column;
+    }
+    .bg-two input+input{
+        margin-left: 0;
+    }
+    input{
+        width: 100%;
+    }
+    form{
+        margin: 30px 0;
+        justify-content: start;
+    }
 }
